@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Настройки монитора</string>
+
+    <string name="preferences_mode">Режим работы</string>
+    <string name="preferences_autostart">Автостарт при загрузке</string>
+    <string name="preferences_remember">Запоминать настройки</string>
+    <string name="preferences_remember_summary">Восстанавливать настройки монитора при загрузке</string>
+    <string name="status_device_connected">Подключено. Тип устройства: %s</string>
+    <string name="status_device_found">"Совместимое устройство найдено: "</string>
+    <string name="status_service_started">Сервис запущено. Ожидание устройства</string>
+    <string name="backlight">Подсветка</string>
+    <string name="backlight_min">Мин</string>
+    <string name="backlight_max">Макс</string>
+    <string name="backlight_on">B/L Вкл</string>
+    <string name="backlight_off">B/L Откл</string>
+    <string name="autobacklight_on">Авто B/L Вкл</string>
+    <string name="autobacklight_off">Авто B/L Откл</string>
+    <string name="current_backlight_level">Текущий уровень подсветки</string>
+    <string name="current_ambientlight_level">Текущий уровень датчика освещенности</string>
+    <string name="touchscreen">Тачскрин</string>
+    <string name="h_flip_off">Отражение по гоизонтали вкл.</string>
+    <string name="h_flip_on">Отражение по гоизонтали выкл.</string>
+    <string name="v_flip_off">Отражение по вертикали вкл.</string>
+    <string name="v_flip_on">Отражение по вертикали выкл.</string>
+    <string name="error">Ошибка: %s</string>
+    <string name="action_connect">Connect</string>
+</resources>

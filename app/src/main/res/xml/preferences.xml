@@ -1,0 +1,35 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/preferences_mode">
+
+        <CheckBoxPreference
+            android:key="autostart"
+            android:title="@string/preferences_autostart"
+            android:summary=""
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="save"
+            android:title="@string/preferences_remember"
+            android:summary="@string/preferences_remember_summary"
+            android:defaultValue="true" />
+
+        <!--CheckBoxPreference
+            android:key="integration"
+            android:title="Use system brightness"
+            android:summary="Change LCD brightness when system brightness changed"
+            android:defaultValue="true" /-->
+
+        <EditTextPreference
+            android:key="version"
+            android:title="@string/version"
+            android:enabled="false"
+            android:selectable="false"
+            android:persistent="false"
+            android:shouldDisableView="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

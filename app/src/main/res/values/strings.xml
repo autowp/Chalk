@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Monitor settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="version">Version</string>
+    <string name="preferences_mode">Mode</string>
+    <string name="preferences_autostart">Autostart on boot</string>
+    <string name="preferences_remember">Remember settings</string>
+    <string name="preferences_remember_summary">Restore display configuration on boot</string>
+    <string name="status_device_connected">Device connected. Type %s</string>
+    <string name="status_device_found">"Compatible device found: "</string>
+    <string name="status_service_started">Service started. Waiting for device</string>
+    <string name="backlight">Backlight</string>
+    <string name="backlight_min">Min</string>
+    <string name="backlight_max">Max</string>
+    <string name="backlight_on">B/L On</string>
+    <string name="backlight_off">B/L Off</string>
+    <string name="autobacklight_on">Auto B/L On</string>
+    <string name="autobacklight_off">Auto B/L Off</string>
+    <string name="current_backlight_level">Current backlight level</string>
+    <string name="current_ambientlight_level">Current ambient light level</string>
+    <string name="touchscreen">Touchscreen</string>
+    <string name="h_flip_off">H flip off</string>
+    <string name="h_flip_on">H flip on</string>
+    <string name="v_flip_off">V flip off</string>
+    <string name="v_flip_on">V flip on</string>
+    <string name="backlight_dec">-1</string>
+    <string name="backlight_inc">+1</string>
+    <string name="error">Error: %s</string>
+    <string name="action_connect">Connect</string>
+</resources>

@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textStatus"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="@string/status_service_started"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/backlight"
+            android:id="@+id/textView"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backlight_min"
+                android:id="@+id/btnMin"
+                android:onClick="minClick"
+                android:enabled="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backlight_dec"
+                android:id="@+id/btnDec"
+                android:onClick="decClick"
+                android:enabled="false" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBacklightToggle"
+                android:onClick="backlightToggleClick"
+                android:textOn="@string/backlight_on"
+                android:textOff="@string/backlight_off"
+                android:enabled="false" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAutoBacklightToggle"
+                android:onClick="autoBacklightToggleClick"
+                android:textOn="@string/autobacklight_on"
+                android:textOff="@string/autobacklight_off"
+                android:enabled="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backlight_inc"
+                android:id="@+id/btnInc"
+                android:onClick="incClick"
+                android:enabled="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backlight_max"
+                android:id="@+id/btnMax"
+                android:onClick="maxClick"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/current_backlight_level"
+                android:id="@+id/textView3"
+                android:layout_gravity="center" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:layout_gravity="center"
+                android:max="18"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/current_ambientlight_level"
+                android:id="@+id/textView4"
+                android:layout_gravity="center" />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:progress="0"
+                android:max="255"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_gravity="center"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/touchscreen"
+            android:id="@+id/textView2"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/btnFlipH"
+                android:layout_gravity="center"
+                android:textOff="@string/h_flip_off"
+                android:textOn="@string/h_flip_on"
+                android:onClick="flipHClick"
+                android:enabled="false" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/btnFlipV"
+                android:layout_gravity="center"
+                android:textOff="@string/v_flip_off"
+                android:textOn="@string/v_flip_on"
+                android:onClick="flipVClick"
+                android:enabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
